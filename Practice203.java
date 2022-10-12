@@ -1,7 +1,7 @@
 public class Practice203 {
   public static void main(String[] args) {
   int a = 100;
-  double b = 3.14;
+  float b = 3.1415F;
   System.out.println(a * b);
   }
 }
