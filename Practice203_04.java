@@ -20,17 +20,15 @@ public class Practice203_04 {
     BigDecimal totalPrice = savings;
  
 
-        for (; yearCount< 11; yearCount++){
-            //貯金額
-            savingPrice = savingPrice.add(month.multiply(price));
-            //複利計算
-            totalPrice = (totalPrice.add(month.multiply(price)).multiply(welfare)).setScale(0, RoundingMode.HALF_UP);
-            //貯金額コンマ区切り
-            NumberFormat commasavingPrice = NumberFormat.getNumberInstance(); 
-            //複利計算コンマ区切り
-            NumberFormat commatotalPrice = NumberFormat.getNumberInstance(); 
-
-            System.out.println(yearCount + "年目" + commasavingPrice.format(savingPrice)+ "円" + commatotalPrice.format(totalPrice) + "円"); 
+    for (; yearCount< 11; yearCount++){
+        //貯金額
+        savingPrice = savingPrice.add(month.multiply(price));
+         //複利計算
+        totalPrice = (totalPrice.add(month.multiply(price)).multiply(welfare)).setScale(0, RoundingMode.HALF_UP);
+        //コンマ区切り
+        NumberFormat commaPrice = NumberFormat.getNumberInstance(); 
+        //出力
+        System.out.println(yearCount + "年目" + commaPrice.format(savingPrice)+ "円" + commaPrice.format(totalPrice) + "円"); 
      
         }
     }
