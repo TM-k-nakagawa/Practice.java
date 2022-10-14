@@ -7,8 +7,8 @@ public class Practice202_04 {
   String name = scanner.next();
   System.out.println( name +"さんこんにちは。");
   System.out.println("あなたは何歳ですか？");
-  String old = scanner.next();
-  System.out.println(old +"歳なんですね。よろしくお願いします。");
+  String age = scanner.next();
+  System.out.println(age +"歳なんですね。よろしくお願いします。");
   scanner.close();
   } 
 }
